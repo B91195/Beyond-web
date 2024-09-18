@@ -1,0 +1,248 @@
+
+       
+/* Estilos para los botones generales */
+button, input[type="submit"] {
+    background-color: #000000; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Relleno interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Muestra como elemento en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando pasa el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Animación suave en el cambio de color */
+}
+
+/* Estilo de hover para los botones */
+button:hover, input[type="submit"]:hover {
+    background-color: #8b0000; /* Color de fondo más oscuro en hover */
+}
+
+/* Estilo para botones de acción secundaria (Eliminar, Editar) */
+button.secondary, input[type="submit"].secondary {
+    background-color: #f44336; /* Color de fondo rojo */
+    color: white; /* Texto blanco */
+}
+
+/* Estilo de hover para botones de acción secundaria */
+button.secondary:hover, input[type="submit"].secondary:hover {
+    background-color: #da190b; /* Color de fondo más oscuro en hover */
+}
+
+
+/* Estilos generales */
+body {
+    font-family: 'BankGothic Md BT'; /* Fuente de aspecto técnico */
+    background-color: #000000; /* Fondo oscuro, común en interfaces sci-fi */
+    color: #fff; /* Texto blanco para contraste */
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para la tabla */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+img.thumbnail {
+    max-width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+#formContainer {
+    margin-bottom: 20px;
+}
+
+#showFormBtn {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Estilo del modal */
+#imageModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageModal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#closeModal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
+as */
+tr:hover {
+    background-color: #8b0000;
+}
+
+/* Mostrar imagen en hover */
+td img {
+    display: none;
+}
+/* Estilo para resaltar palabras clave */
+.highlight {
+color: red; /* Cambia el color según lo necesites */
+font-weight: bold; /* Opcional: hace que el texto sea negrita */
+}
+
+tr:hover td img {
+    display: inline;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Estilos CSS combinados */
+body {
+    background: BLACK;
+    color: white;
+    font-family: 'BankGothic Md BT';
+    text-align: center;
+}
+
+.navbar {
+    background-color: #333; /* Color de fondo para la barra de navegación */
+    padding: 10px; /* Espacio alrededor del contenido de la barra */
+    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+    flex-direction: column; /* Muestra los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.navbar h1 {
+    margin: 0; /* Quita el margen del encabezado */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente del texto */
+    text-align: center; /* Centrar el texto */
+}
+
+.search-forms {
+    display: flex; /* Muestra los formularios de búsqueda uno al lado del otro */
+    gap: 10px; /* Espacio entre los formularios de búsqueda */
+    margin-top: 10px; /* Espacio superior para separar de la cabecera */
+}
+
+.search-forms form {
+    margin: 0; /* Quita el margen de los formularios */
+    display: flex; /* Utiliza flexbox para alinear los campos y botones de búsqueda */
+    align-items: center; /* Centra verticalmente los elementos dentro de los formularios */
+}
+
+.search-forms input[type="text"] {
+    padding: 5px; /* Añade un poco de relleno interno al campo de búsqueda */
+}
+
+.search-forms input[type="submit"] {
+    padding: 5px 10px; /* Añade un poco de relleno interno al botón */
+    margin-left: 5px; /* Espacio a la izquierda del botón */
+}
+
+table {
+    margin: 20px auto; /* Centrar la tabla horizontalmente con margen */
+    border-collapse: collapse; /* Quitar espacios entre celdas de la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borde de las celdas */
+    padding: 8px; /* Relleno en las celdas */
+}
+
+th {
+    background-color: #333; /* Fondo de las celdas de encabezado */
+    color: white; /* Texto blanco en las celdas de encabezado */
+}
+
+td img {
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima de la imagen */
+}
+
+form {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.img-td {
+    width: 100px;
+}
+
+.img-td img {
+    width: 100%;
+    height: auto;
+}
